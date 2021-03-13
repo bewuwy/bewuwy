@@ -5,4 +5,5 @@ Disallow: /svg/
 User-agent: *
 Allow: /
 
-Sitemap: https://www.bewu.ga/sitemap.xml
+Sitemap: http://www.bewu.ga/sitemap.xml
+Sitemap: http://www.bewu.ga/sitemap.txt
