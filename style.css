@@ -1,3 +1,14 @@
+@font-face {
+  font-family: Poppins;
+  font-weight: normal;
+  src: url(/fonts/Poppins-Light.ttf);
+}
+@font-face {
+  font-family: Poppins;
+  font-weight: bold;
+  src: url(/fonts/Poppins-SemiBold.ttf);
+}
+
 .center {
   margin: 10%;
   margin-top: 0.5%;
@@ -28,7 +39,7 @@
 body {
     background-color: #181a1b;
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins';
 }
 a {
   color: #1a85ff;
