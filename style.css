@@ -1,5 +1,5 @@
 .center {
-  margin: 100px;
+  margin: 10%;
   margin-top: 8%;
   margin-bottom: 10%;
   padding: 10px;
@@ -22,12 +22,15 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 a {
-  color: #3391ff;
+  color: #1a85ff;
   font-weight: bold;
   text-decoration: none;
 }
 h1 {
   font-size: 44px;
+}
+h2 {
+  font-size: 32px;
 }
 p {
   font-size: 24px;
@@ -36,4 +39,10 @@ img {
   width: 30px;
   height: auto;
   vertical-align: middle;
+}
+li {
+  padding: 8px;
+  margin-bottom: 15px;
+  background-color: #00bfff;
+  border-radius: 20px;
 }
