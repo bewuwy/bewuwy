@@ -1,11 +1,19 @@
 .center {
   margin: 10%;
-  margin-top: 8%;
+  margin-top: 0.5%;
   margin-bottom: 10%;
   padding: 10px;
   width: auto;
   text-align: center;
   display: block;
+}
+.logo {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 200px;
+    margin: 30px;
+    margin-bottom: 10px;
 }
 .f20 {
   font-weight: bold;
@@ -43,6 +51,6 @@ img {
 li {
   padding: 8px;
   margin-bottom: 15px;
-  background-color: #00bfff;
+  background-color: #2ebbd6;
   border-radius: 20px;
 }
