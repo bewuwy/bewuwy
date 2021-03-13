@@ -22,8 +22,6 @@
     position: relative;
     top: 0;
     left: 0;
-    width: 200px;
-    height: auto;
     margin: 30px;
     margin-bottom: 10px;
 }
@@ -61,6 +59,6 @@ img {
 li {
   padding: 8px;
   margin-bottom: 15px;
-  background-color: #2ebbd6;
+  background-color: #1D8195;
   border-radius: 20px;
 }
