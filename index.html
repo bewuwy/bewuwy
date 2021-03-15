@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#181a1b"/>
 
-    <link rel="icon" href="favicon/favicon.ico">
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
     <script type="application/ld+json">
     {
@@ -35,6 +35,12 @@
       ]
     }
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      function moveTo(section) {
+          $("html, body").animate({ scrollTop: $(section).offset().top }, 1000);
+      }
+    </script>
     <style>
     a {
       vertical-align: middle;
@@ -47,34 +53,64 @@
   <body>
     <script>0</script>
 
-    <a href="/" rel="prev"><img class="logo" src="favicon/bewu_long.png" alt="bewu" width="200" height="43"></a>
-    <div class="center">
-      <h1>bewu</h1>
-      <p>tak, to ja, bewu (<a href="/about/" rel="next">o mnie</a>)</p>
+    <div class="banner" id="start">
+      <a href="/" rel="prev" style="display: inline-block; margin: 30px; margin-bottom: 10px;">
+        <img src="img/logo/bewu_long.png" alt="bewu.ga" style="height: 6vh; width: auto;">
+      </a>
 
-      <p>
-        <img src="svg/discord.svg" alt="Discord" width="30" height="22">
-        <a href="https://discord.com" rel="nofollow, noreferrer" target="_blank">bewu#0764</a>
-      </p>
+      <div class="center">
+        <h1>bewu</h1>
+        <p>tak, to ja, bewu</p>
 
-      <p>
-        <img src="svg/github.svg" alt="Github" width="30" height="30">
-        <a href="https://github.com/bewuwy" rel="nofollow, noreferrer" target="_blank">bewuwy</a>
-      </p>
+        <p>
+          <img src="img/icons/discord.svg" alt="Discord" width="auto" height="22" class="icon">
+          <a href="https://discord.com" rel="noreferrer" target="_blank">bewu#0764</a>
+        </p>
 
-      <p>
-        <img src="svg/steam.svg" alt="Steam" width="30" height="30">
-        <a href="https://steamcommunity.com/id/bewuwy/" rel="nofollow, noreferrer" target="_blank">bewu</a>
-      </p>
+        <p>
+          <img src="img/icons/github.svg" alt="Github" width="auto" height="30" class="icon">
+          <a href="https://github.com/bewuwy" rel="noreferrer" target="_blank">bewuwy</a>
+        </p>
 
-      <p>
-        <img src="svg/mc.svg" alt="Minecraft" width="30" height="30">
-        <a href="https://mine.ly/b3wu.1" rel="nofollow, noreferrer" target="_blank">b3wu</a>
-      </p>
+        <p>
+          <img src="img/icons/steam.svg" alt="Steam" width="auto" height="30" class="icon">
+          <a href="https://steamcommunity.com/id/bewuwy/" rel="noreferrer" target="_blank">bewu</a>
+        </p>
 
-      <br/>
-      <p class="f16"><a href="/faq/" rel="next">faq</a></p>
-      <p class="f16"><a href="https://github.com/bewuwy/bewuwy" rel="nofollow">github repo</a></p>
+        <p>
+          <img src="img/icons/mc.svg" alt="Minecraft" width="auto" height="30" class="icon">
+          <a href="https://mine.ly/b3wu.1" rel="noreferrer" target="_blank">b3wu</a>
+        </p>
+
+        <div class="arrowDiv">
+          <p class="f16">zjedź niżej</p>
+          <img src="img/icons/arrow.webp" height="50vh" width="auto" alt="arrow" class="arrow" onclick="moveTo('#about')">
+        </div>
+      </div>
+    </div>
+
+    <div class="banner" id="about">
+      <div class="center">
+        <h2>hejka, jestem bewu</h2>
+        <img src="img/picrew/normal.png" style="height: 25vh;">
+        <p>kim dokładnie jestem?</p>
+        <p class="f16">świetne pytanie! jestem komputerświrem</p>
+        <p class="f16">zastanawiasz się teraz pewnie co to znaczy być komputerświrem, już odpowiadam</p>
+        <p class="f16">więc no umiem klikać w komputer i zrobiłem pare projektów, no i oczywiście jestem introwertykiem</p>
+
+        <div class="arrowDiv">
+          <p class="f16">zjedź niżej</p>
+          <img src="img/icons/arrow.webp" width="50" alt="arrow" class="arrow" onclick="moveTo('#projects')">
+        </div>
+      </div>
+    </div>
+
+    <div class="banner" id="projects">
+      <div class="center">
+        <br/>
+        <p class="f16"><a href="/faq/" rel="next">faq</a></p>
+        <p class="f16"><a href="https://github.com/bewuwy/bewuwy" rel="nofollow">github repo</a></p>
+      </div>
     </div>
   </body>
 </html>
