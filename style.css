@@ -24,11 +24,6 @@
   text-align: center;
   display: inline-block;
 }
-.logo {
-    position: relative;
-    top: 0;
-    left: 0;
-}
 .icon {
   height: auto;
   width: 3vh;
@@ -52,9 +47,10 @@
   margin-right: 3%;
 }
 body {
-    background-color: #181a1b;
+    background-color: #131516;
     color: white;
     font-family: 'Poppins';
+    margin: 0;
 }
 a {
   color: #1a85ff;
