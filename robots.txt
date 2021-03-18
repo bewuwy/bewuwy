@@ -1,9 +1,5 @@
-User-agent: googlebot
-Disallow: /favicon/
-Disallow: /svg/
-
 User-agent: *
 Allow: /
 
-Sitemap: http://www.bewu.ga/sitemap.xml
-Sitemap: http://www.bewu.ga/sitemap.txt
+Sitemap: https://bewu.ga/sitemap.xml
+Sitemap: https://bewu.ga/sitemap.txt
