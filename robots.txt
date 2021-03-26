@@ -1,5 +1,10 @@
 User-agent: *
 Allow: /
 
+User-agent: Googlebot
+Allow: /
+Allow: /sitemap.xml
+Allow: /sitemap.txt
+
 Sitemap: https://bewu.ga/sitemap.xml
 Sitemap: https://bewu.ga/sitemap.txt
