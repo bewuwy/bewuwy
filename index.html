@@ -1,54 +1,62 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html prefix="og: http://ogp.me/ns#" lang="pl">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#181a1b"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#181a1b" />
 
-    <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="style.css">
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "bewu",
-      "legalName" : "bewuwy",
-      "url": "https://bewu.ga",
-      "@id": "https://bewu.ga",
-      "logo": "https://bewu.ga/favicon/bewu.png",
-      "foundingDate": "2021",
-      "founders": [
-        {
-         "@type": "Person",
-         "name": "Bartek bewu Włodarczyk"
-        }
-      ],
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Warszawa",
-        "addressCountry": "PL"
-      },
-      "sameAs": [
-        "https://github.com/bewuwy",
-        "https://steamcommunity.com/id/bewuwy",
-        "https://mine.ly/b3wu.1"
-      ]
-    }
-    </script>
+    <title>bewu.ga</title>
+    <meta name="description" content="hej, jestem bewu aka bewuwy, jestem komputerświrem. no i to jest moja strona" />
+    <meta property="og:title" content="bewu" />
+    <meta property="og:description" content="hej, jestem bewu aka bewuwy, jestem komputerświrem. no i to jest moja strona" />
+    <meta property="og:site_name" content="bewu.ga" />
+    <meta property="og:url" content="https://bewu.ga/" />
+    <meta property="og:image" content="https://bewu.ga/img/picrew/asking.png" />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="600" />
+    <meta property="og:image:alt" content="bewu" />
+    <meta property="og:type" content="website" />
+
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="sitemap" href="/sitemap.xml" />
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "bewu",
+        "legalName" : "bewuwy",
+        "url": "https://bewu.ga",
+        "@id": "https://bewu.ga",
+        "logo": "https://bewu.ga/img/logo/bewu.png",
+        "foundingDate": "2021",
+        "founders": [
+          {
+           "@type": "Person",
+           "name": "Bartek bewu Włodarczyk"
+          }
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Warszawa",
+          "addressCountry": "PL"
+        },
+        "sameAs": [
+          "https://github.com/bewuwy",
+          "https://steamcommunity.com/id/bewuwy",
+          "https://mine.ly/b3wu.1"
+        ]
+      }
+    </script>
     <script>
       function moveTo(section) {
           $("html, body").animate({ scrollTop: $(section).offset().top }, 1000);
       }
     </script>
-    <style>
-    a {
-      vertical-align: middle;
-    }
-    </style>
-    <title>bewu.ga</title>
-    <meta name="description" content="hej, jestem bewu aka bewuwy,
-    jestem komputerświrem oraz fanatykiem Pythona. ta strona to moja wizytówka">
+
+    <style>a { vertical-align: middle; }</style>
   </head>
   <body>
     <div id="page-container">
@@ -97,8 +105,8 @@
             <img src="img/picrew/asking.png" style="height: 25vh;">
             <p>kim dokładnie jestem?</p>
             <p class="f16">świetne pytanie! jestem komputerświrem.</p>
-            <p class="f16">zastanawiasz się teraz pewnie co to znaczy być komputerświrem, już odpowiadam</p>
-            <p class="f16">no więc umiem klikać w komputer i zrobiłem pare projektów, no i jeszcze jestem introwertykiem</p>
+            <p class="f16">zastanawiasz się teraz pewnie co to znaczy być komputerświrem</p>
+            <p class="f16">no więc umiem klikać w komputer i zrobiłem pare projektów</p>
 
             <div class="arrowDiv">
               <p class="f16">moje projekty</p>
@@ -110,11 +118,10 @@
         <div class="banner" id="projects">
           <div class="center">
               <h2>Moje projekty</h2>
-              <p class="f16">większość moich projektów napisałem w Pythonie, jednak staram się uczyć jak największej ilości języków.</p>
-              <p class="f16">ta strona na przykład napisana jest w całości w HTML i CSS.</p>
-              <p class="f16">oprócz tego znam jeszcze podstawy Javy i prawie podstawy C++</p>
+              <p class="f16">większość moich projektów napisałem w Pythonie i nie obchodzi mnie, że jest wolny</p>
+              <p class="f16">no i oprócz tego znam jeszcze podstawy Javy, prawie podstawy C++, no i trochę HTML i CSS</p>
               <p class="f16">umiem jeszcze kopiować kod z stackoverflow</p>
-              <p class="f16"><a href="/projects/" rel="next" alt="Projects">pełna lista moich projektów</a></p>
+              <p class="f16"><a href="/projects/" rel="next" alt="Projects">moje projekty</a></p>
 
               <div class="arrowDiv">
                 <p class="f16">koniec</p>
