@@ -17,7 +17,23 @@ questions:
     a: W najnowszych modelach <strong>bewu</strong> wykorzystujemy procesory <strong>Intel i20</strong> oraz kartę graficzną <strong>Nvidia 5080 super</strong>.
   - q: Czym jest Nvidia rtx 5080 super?
     a: Nvidia rtx 5080 super posiada 15,000 rdzeni CUDA i zbudowana jest na nowoczesnej i przełomowej architekturze bewuwy42069.
+
 head_include: script_faq.html
 ---
 
-{% include faq.html %}
+{% include logo.html %}
+<div class="center">
+  <h1>FAQ</h1>
+  <h2>często zadawane pytania o tej stronie oraz bewu</h2>
+  <p class="f16">bo przecież dostaję ich tak wiele</p>
+  <br/>
+
+  <ul style="padding-right: 40px;">
+    {% for item in page.questions %}
+    <li>
+      <p class="f20">{{ item.q }}</p>
+      <p class="f16">{{ item.a }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
