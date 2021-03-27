@@ -1,143 +1,71 @@
-<!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns#" lang="pl">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#181a1b" />
+---
+layout: default
+title: bewu.ga
+description: hej, jestem bewu aka bewuwy, jestem komputerświrem. no i to jest moja strona
+head_include: script_index.html
+---
 
-    <title>bewu.ga</title>
-    <meta name="description" content="hej, jestem bewu aka bewuwy, jestem komputerświrem. no i to jest moja strona" />
-    <meta property="og:title" content="bewu" />
-    <meta property="og:description" content="hej, jestem bewu aka bewuwy, jestem komputerświrem. no i to jest moja strona" />
-    <meta property="og:site_name" content="bewu.ga" />
-    <meta property="og:url" content="https://bewu.ga/" />
-    <meta property="og:image" content="https://bewu.ga/img/picrew/asking.png" />
-    <meta property="og:image:width" content="600" />
-    <meta property="og:image:height" content="600" />
-    <meta property="og:image:alt" content="bewu" />
-    <meta property="og:type" content="website" />
+<div class="banner" id="start">
+  {% include logo.html %}
 
-    <link rel="icon" href="favicon.ico" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="sitemap" href="/sitemap.xml" />
+  <div class="center">
+    <h1>bewu</h1>
+    <p>tak, to ja, bewu</p>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "bewu",
-        "legalName" : "bewuwy",
-        "url": "https://bewu.ga",
-        "@id": "https://bewu.ga",
-        "logo": "https://bewu.ga/img/logo/bewu.png",
-        "foundingDate": "2021",
-        "founders": [
-          {
-           "@type": "Person",
-           "name": "Bartek bewu Włodarczyk"
-          }
-        ],
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Warszawa",
-          "addressCountry": "PL"
-        },
-        "sameAs": [
-          "https://github.com/bewuwy",
-          "https://steamcommunity.com/id/bewuwy",
-          "https://mine.ly/b3wu.1"
-        ]
-      }
-    </script>
-    <script>
-      function moveTo(section) {
-          $("html, body").animate({ scrollTop: $(section).offset().top }, 1000);
-      }
-    </script>
+    <p>
+      <img src="assets/icons/discord.svg" alt="Discord" width="auto" height="22" class="icon">
+      <a href="https://discord.com" rel="noreferrer" target="_blank">bewu#0764</a>
+    </p>
 
-    <style>a { vertical-align: middle; }</style>
-  </head>
-  <body>
-    <div id="page-container">
-      <script>0</script>
+    <p>
+      <img src="assets/icons/github.svg" alt="Github" width="auto" height="30" class="icon">
+      <a href="https://github.com/bewuwy" rel="noreferrer" target="_blank">bewuwy</a>
+    </p>
 
-      <div id="content-wrap">
-        <div class="banner" id="start">
-          <a alt="bewu.ga" href="/" rel="prev" style="display: inline-block; margin: 30px; margin-bottom: 10px;">
-            <img src="img/logo/bewu_long.png" alt="bewu.ga" style="height: 6vh; width: auto;">
-          </a>
+    <p>
+      <img src="assets/icons/steam.svg" alt="Steam" width="auto" height="30" class="icon">
+      <a href="https://steamcommunity.com/id/bewuwy/" rel="noreferrer" target="_blank">bewu</a>
+    </p>
 
-          <div class="center">
-            <h1>bewu</h1>
-            <p>tak, to ja, bewu</p>
+    <p>
+      <img src="assets/icons/mc.svg" alt="Minecraft" width="auto" height="30" class="icon">
+      <a href="https://mine.ly/b3wu.1" rel="noreferrer" target="_blank">b3wu</a>
+    </p>
 
-            <p>
-              <img src="img/icons/discord.svg" alt="Discord" width="auto" height="22" class="icon">
-              <a href="https://discord.com" rel="noreferrer" target="_blank">bewu#0764</a>
-            </p>
-
-            <p>
-              <img src="img/icons/github.svg" alt="Github" width="auto" height="30" class="icon">
-              <a href="https://github.com/bewuwy" rel="noreferrer" target="_blank">bewuwy</a>
-            </p>
-
-            <p>
-              <img src="img/icons/steam.svg" alt="Steam" width="auto" height="30" class="icon">
-              <a href="https://steamcommunity.com/id/bewuwy/" rel="noreferrer" target="_blank">bewu</a>
-            </p>
-
-            <p>
-              <img src="img/icons/mc.svg" alt="Minecraft" width="auto" height="30" class="icon">
-              <a href="https://mine.ly/b3wu.1" rel="noreferrer" target="_blank">b3wu</a>
-            </p>
-
-            <div class="arrowDiv">
-              <p class="f16">o mnie</p>
-              <img src="img/icons/arrow.webp" height="50vh" width="auto" alt="arrow" class="arrow" onclick="moveTo('#about')">
-            </div>
-          </div>
-        </div>
-
-        <div class="banner" id="about">
-          <div class="center">
-            <h2>hej, jestem bewu</h2>
-            <img src="img/picrew/asking.png" style="height: 25vh;">
-            <p>kim dokładnie jestem?</p>
-            <p class="f16">świetne pytanie! jestem komputerświrem.</p>
-            <p class="f16">zastanawiasz się teraz pewnie co to znaczy być komputerświrem</p>
-            <p class="f16">no więc umiem klikać w komputer i zrobiłem pare projektów</p>
-
-            <div class="arrowDiv">
-              <p class="f16">moje projekty</p>
-              <img src="img/icons/arrow.webp" width="50" alt="arrow" class="arrow" onclick="moveTo('#projects')">
-            </div>
-          </div>
-        </div>
-
-        <div class="banner" id="projects">
-          <div class="center">
-              <h2>Moje projekty</h2>
-              <p class="f16">większość moich projektów napisałem w Pythonie i nie obchodzi mnie, że jest wolny</p>
-              <p class="f16">no i oprócz tego znam jeszcze podstawy Javy, prawie podstawy C++, no i trochę HTML i CSS</p>
-              <p class="f16">umiem jeszcze kopiować kod z stackoverflow</p>
-              <p class="f16"><a href="/projects/" rel="next" alt="Projects">moje projekty</a></p>
-
-              <div class="arrowDiv">
-                <p class="f16">koniec</p>
-                <img src="img/icons/arrow.webp" width="50" alt="arrow" class="arrow" onclick="moveTo('#footer')">
-              </div>
-          </div>
-        </div>
-      </div>
-
-      <footer id="footer" style="background-color: #0c0d0e;">
-        <div class="center" style="padding-bottom: 0; padding-top: 0;">
-          <p class="f16"><a href="/faq/" rel="next" alt="FAQ">faq</a></p>
-          <p class="f16"><a href="https://github.com/bewuwy/bewuwy" rel="nofollow">github repository</a></p>
-          <p class="f16">©2021 Bartek Włodarczyk</p>
-        </div>
-      </footer>
+    <div class="arrowDiv">
+      <p class="f16">o mnie</p>
+      <img src="assets/icons/arrow.webp" height="50vh" width="auto" alt="arrow" class="arrow" onclick="moveTo('#about')">
     </div>
-  </body>
-</html>
+  </div>
+</div>
+
+<div class="banner" id="about">
+  <div class="center">
+    <h2>hej, jestem bewu</h2>
+    <img src="assets/picrew/asking.png" style="height: 25vh;">
+    <p>kim dokładnie jestem?</p>
+    <p class="f16">świetne pytanie! jestem komputerświrem.</p>
+    <p class="f16">zastanawiasz się teraz pewnie co to znaczy być komputerświrem</p>
+    <p class="f16">no więc umiem klikać w komputer i zrobiłem pare projektów</p>
+
+    <div class="arrowDiv">
+      <p class="f16">moje projekty</p>
+      <img src="assets/icons/arrow.webp" width="50" alt="arrow" class="arrow" onclick="moveTo('#projects')">
+    </div>
+  </div>
+</div>
+
+<div class="banner" id="projects">
+  <div class="center">
+      <h2>Moje projekty</h2>
+      <p class="f16">większość moich projektów napisałem w Pythonie i nie obchodzi mnie, że jest wolny</p>
+      <p class="f16">no i oprócz tego znam jeszcze podstawy Javy, prawie podstawy C++, no i trochę HTML i CSS</p>
+      <p class="f16">umiem jeszcze kopiować kod z stackoverflow</p>
+      <p class="f16"><a href="/projects/" rel="next" alt="Projects">moje projekty</a></p>
+
+      <div class="arrowDiv">
+        <p class="f16">koniec</p>
+        <img src="assets/icons/arrow.webp" width="50" alt="arrow" class="arrow" onclick="moveTo('#footer')">
+      </div>
+  </div>
+</div>

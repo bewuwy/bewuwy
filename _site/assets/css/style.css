@@ -1,0 +1,90 @@
+@font-face {
+  font-family: Poppins;
+  font-weight: normal;
+  src: url(/fonts/Poppins-Light.ttf);
+  font-display: swap;
+}
+@font-face {
+  font-family: Poppins;
+  font-weight: bold;
+  src: url(/fonts/Poppins-SemiBold.ttf);
+  font-display: swap;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+#content-wrap {
+  padding-bottom: 9rem;
+}
+.banner {
+  width: auto;
+  height: 100vh;
+  vertical-align: middle;
+}
+.center {
+  padding: 5%;
+  padding-top: 3%;
+  height: 80%;
+  width: 90%;
+  text-align: center;
+  display: inline-block;
+}
+.icon {
+  height: auto;
+  width: 3vh;
+}
+.arrowDiv {
+  margin: 10vh;
+}
+.arrow {
+  opacity: 0.7;
+}
+.arrow:hover {
+  opacity: 1;
+}
+.f20 {
+  font-weight: bold;
+  font-size: 2.7vh;
+}
+.f16 {
+  font-size: 2.1vh;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+body {
+    background-color: #131516;
+    color: white;
+    font-family: 'Poppins';
+    margin: 0;
+}
+a {
+  color: #1a85ff;
+  font-weight: bold;
+  text-decoration: none;
+}
+h1 {
+  margin-top: 0;
+  font-size: 6vh;
+}
+h2 {
+  font-size: 4.4vh;
+}
+p {
+  font-size: 3.3vh;
+}
+img {
+  vertical-align: middle;
+}
+li {
+  padding: 8px;
+  margin-bottom: 15px;
+  background-color: #1D8195;
+  border-radius: 20px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

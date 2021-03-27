@@ -1,0 +1,16 @@
+{% include logo.html %}
+<div class="center">
+  <h1>FAQ</h1>
+  <h2>często zadawane pytania o tej stronie oraz bewu</h2>
+  <p class="f16">bo przecież dostaję ich tak wiele</p>
+  <br/>
+
+  <ul style="padding-right: 40px;">
+    {% for item in page.questions %}
+    <li>
+      <p class="f20">{{ item.q }}</p>
+      <p class="f16">{{ item.a }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
