@@ -23,13 +23,27 @@
   height: 100vh;
   vertical-align: middle;
 }
-.center {
-  padding: 5%;
-  padding-top: 3%;
-  height: 80%;
-  width: 90%;
-  text-align: center;
-  display: inline-block;
+@media (max-width:800px) {
+  .center {
+    margin: 5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    height: 80%;
+    width: 90%;
+    text-align: center;
+    display: inline-block;
+  }
+}
+@media (min-width:801px) {
+  .center {
+    margin: 25%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    height: 80%;
+    width: 50%;
+    text-align: center;
+    display: inline-block;
+  }
 }
 .icon {
   height: auto;
