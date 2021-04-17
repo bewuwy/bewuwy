@@ -3,16 +3,26 @@ layout: default
 title: bewu.ga | projekty
 description: hej, jestem bewu, a to są moje projekty
 head_include: script_projects.html
+
+github_user: bewuwy
+repositories:
+  - bewuwy
+  - bad-apple-checkbox
+  - alipaczka-py
+  - lives-plugin
+  - mi-band-steps
+  - pokemon-go-auto-fav
+  - YIAY-us-discord-bot
 ---
 
 {% include logo.html %}
 
-<div class="center">
+<div class="center" style="margin: 15%; margin-top: 1%; margin-bottom: 1%; width: 70%;">
   <h1>moje projekty</h1>
 
-  <p class="f16">
-    work in progress <progress value="40" max="100"></progress>
-  </p>
-
-  <p class="f16"><a href="/" rel="prev">strona główna</a></p>
+  {% for i in page.repositories %}
+  <a href="https://github.com/{{ page.github_user }}/{{ i }}" target="_blank">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username={{ page.github_user }}&repo={{ i }}&theme=dark" style="max-width: 80%;"></img>
+  </a>
+  {% endfor %}
 </div>
