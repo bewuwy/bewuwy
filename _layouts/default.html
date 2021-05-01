@@ -32,11 +32,18 @@
     <div id="page-container">
       <script>0</script>
 
+      {% unless page.nofooter %}
       <div id="content-wrap">
+      {% endunless %}
         {{ content }}
+      {% unless page.nofooter %}
       </div>
+      {% endunless %}
 
-      {% include footer.html %}
+      {% unless page.nofooter %}
+        {% include footer.html %}
+      {% endunless %}
     </div>
+
   </body>
 </html>
