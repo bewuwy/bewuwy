@@ -20,13 +20,16 @@ nofooter: true
       document.getElementById("days").innerHTML = "loading...";
       document.getElementById("episodes").innerHTML = "loading..";
 
-      const getData = async () => {
-        const response = await fetch('https://api.jikan.moe/v3/user/bewu');
-        const dataJson = await response.json();
-        document.getElementById("days").innerHTML = dataJson["anime_stats"]["days_watched"];
-        document.getElementById("episodes").innerHTML = dataJson["anime_stats"]["episodes_watched"];
+      function getData() {
+        fetch('https://mal-days.herokuapp.com/api/bewu').then(function (response) {
+        	return response.json();
+        }).then(function (data) {
+          document.getElementById("days").innerHTML = data["days"];
+          document.getElementById("episodes").innerHTML = data["eps"];
+        })
       }
+
       getData();
-      setInterval(getData, 60 * 1000)
+      setInterval(getData, 30 * 1000)
     }
 </script>
