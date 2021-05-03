@@ -1,13 +1,18 @@
 ---
 layout: default
 title: bewu.ga
-description: hej, jestem bewu aka weebuwy, tyle dni zmarnowałem :D
+description: hej, jestem bewu aka weebuwy, a tyle dni zmarnowałem :D
 nofooter: true
 ---
 
+<link rel="stylesheet" href="/assets/css/odometer-theme-default.css">
+<script src="/assets/js/odometer.min.js"></script>
+
 <div style="height: 100vh; line-height: 100vh; text-align: center;">
-  <span id="days" style="margin: 0; font-size: 150px; font-weight: bold; text-shadow: 0px 0px 10px #fff, 0px 0px 10px #ccc;">days wasted</span>
-  <span id="episodes" style="margin: 0; font-size: 30px;">episodes number</span>
+  <div style="vertical-align: middle; display: inline;">
+    <span class="odometer" id="days" style="margin: 0; font-size: 180px; font-weight: bold; text-shadow: 0px 0px 6px #fff, 0px 0px 6px #ccc; vertical-align: auto;">days</span>
+    <span class="odometer" id="episodes" style="margin: 0; font-size: 40px; vertical-align: auto;">episodes</span>
+  </div>
 </div>
 
 <script type="text/javascript">
