@@ -37,26 +37,20 @@ head_include: script_index.html
       <a href="https://mine.ly/b3wu.1" rel="noreferrer" target="_blank">b3wu</a>
     </p>
 
-    <div class="arrowDiv">
-      <p class="f16">o mnie</p>
-      <img src="assets/icons/arrow.webp" height="50vh" width="auto" alt="arrow" class="arrow" onclick="moveTo('#about')">
-    </div>
+    {% include arrow.html title="o mnie" moveto="#about" %}
   </div>
 </div>
 
 <div class="banner" id="about">
   <div class="center">
     <h2>hej, jestem bewu</h2>
-    <img src="assets/picrew/asking.png" style="height: 25vh;">
+    <img src="assets/picrew/asking.webp" alt="bewu asking" style="height: 25vh; width: auto;" width="600" height="600">
     <p>kim jestem?</p>
     <p class="f16">dobre pytanie, jestem bewu.</p>
     <p class="f16">co to znaczy być bewu? lol nie wiem</p>
     <p class="f16">ale umiem klikać w komputer i zrobiłem pare projektów</p>
 
-    <div class="arrowDiv">
-      <p class="f16">moje projekty</p>
-      <img src="assets/icons/arrow.webp" width="50" alt="arrow" class="arrow" onclick="moveTo('#projects')">
-    </div>
+    {% include arrow.html title="moje projekty" moveto="#projects" %}
   </div>
 </div>
 
@@ -68,9 +62,6 @@ head_include: script_index.html
       <p class="f16">umiem jeszcze kopiować kod z stackoverflow</p>
       <p class="f16"><a href="/projects" rel="next" alt="Projects">moje projekty</a></p>
 
-      <div class="arrowDiv">
-        <p class="f16">koniec</p>
-        <img src="assets/icons/arrow.webp" width="50vw" alt="arrow" class="arrow" onclick="moveTo('#footer')">
-      </div>
+      {% include arrow.html title="koniec" moveto="#footer" %}
   </div>
 </div>
