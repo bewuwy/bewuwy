@@ -34,7 +34,12 @@
   </head>
   <body>
     <div id="page-container">
-      <script>0</script>
+      <script>
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", 'https://stats.bewuwy.ga/bewu/post', true);
+
+        xhr.send("page={{ page.name }}");
+      </script>
 
       {% unless page.nofooter %}
       <div id="content-wrap">
