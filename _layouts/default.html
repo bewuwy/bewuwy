@@ -28,6 +28,16 @@
 
     <script src="/assets/js/jquery-3.6.0.min.js" async></script>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G383S7G6EJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-G383S7G6EJ');
+    </script>
+
     {% if page.head_include %}
       {% include {{ page.head_include }} %}
     {% endif %}
