@@ -45,9 +45,12 @@
     display: inline-block;
   }
 }
-.icon {
-  height: auto;
-  width: 3vh;
+.iconbox img {
+  height: 3vh;
+  width: auto;
+}
+.iconbox:hover {
+  opacity: 0.7;
 }
 .arrowDiv {
   margin: 10vh;
@@ -68,22 +71,25 @@
   margin-right: 3%;
 }
 nav {
-    padding-top: 2vw;
-    vertical-align: middle;
-    line-height: 3.7vh;
+  padding-top: 2vw;
+  vertical-align: middle;
+  line-height: 3.7vh;
 }
 nav a {
-    margin: 1vw;
-    color: white;
-    font-size: 3.5vh;
-    font-weight: bold;
-    vertical-align: 2%;
+  margin: 1vw;
+  color: white;
+  font-size: 3.5vh;
+  font-weight: bold;
+  vertical-align: 2%;
+}
+nav a:hover {
+  opacity: 0.7;
 }
 body {
-    background-color: #131516;
-    color: white;
-    font-family: 'Poppins';
-    margin: 0;
+  background-color: #131516;
+  color: white;
+  font-family: 'Poppins';
+  margin: 0;
 }
 a {
   color: #1a85ff;
