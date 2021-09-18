@@ -1,2 +1,2 @@
 #### i make projects. yes.
-[bewu.ga](https://bewu.ga)
+[bewu.dev](https://bewu.dev)
