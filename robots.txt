@@ -6,5 +6,5 @@ Allow: /
 Allow: /sitemap.xml
 Allow: /sitemap.txt
 
-Sitemap: https://bewu.ga/sitemap.xml
-Sitemap: https://bewu.ga/sitemap.txt
+Sitemap: https://bewu.dev/sitemap.xml
+Sitemap: https://bewu.dev/sitemap.txt
