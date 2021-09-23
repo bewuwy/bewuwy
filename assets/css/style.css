@@ -46,20 +46,34 @@
   }
 }
 .iconbox img {
-  height: 3vh;
+  height: 4vh;
+  margin-right: 0.5vw;
   width: auto;
+  transition-property: transform;
+  transition-duration: 0.7s;
 }
-.iconbox:hover {
+.iconbox img:hover {
   opacity: 0.7;
+  transform: rotate(360deg);
 }
 .arrowDiv {
-  margin: 10vh;
+  margin: 9vh;
 }
 .arrow {
   opacity: 0.7;
 }
 .arrow:hover {
   opacity: 1;
+}
+.pfp {
+  height: 50vh;
+  width: auto;
+  position: relative;
+  top: 0;
+  transition: top ease 0.3s;
+}
+.pfp:hover {
+  top: -2.5vh;
 }
 .f20 {
   font-weight: bold;
@@ -121,5 +135,5 @@ footer {
   width: 100%;
 }
 footer p {
-  margin: 0.7em;
+  margin: 0.1rem;
 }
