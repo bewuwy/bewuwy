@@ -1,3 +1,10 @@
+@font-face {
+  font-family: fsm;
+  font-weight: bold;
+  src: url(/assets/fonts/FantasqueSansMono-Regular.ttf);
+  font-display: swap;
+}
+
 nav {
   margin-left: 1vw;
   display: inline-block;
