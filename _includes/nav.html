@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="/assets/css/nav.css">
+
+<nav id="nav">
+    <span>bewu</span>
+    <div id="links" style="display: inline;">
+      <a alt="bewu.ga" href="/" rel="prev" style="margin: 0;" id="navTitle">.{{ include.title }}</a>
+      <div style="display: none;" id="navLinks">
+        {% unless include.title == "start()" %}<a href="/" rel="prev">.start()</a><br>{% endunless %}
+        {% unless include.title == "projects()" %}<a href="/projects" rel="next">.projects()</a>{% endunless %}
+      </div>
+    </div>
+</nav>
+
+<script type="text/javascript">
+  window.onload = function() {
+    $("#nav").hover(function() {
+      $("#navLinks").slideDown({
+        duration: 400,
+    });
+    },
+    function() {
+      $("#navLinks").slideUp({
+        duration: 400,
+    });
+    })
+  }
+</script>

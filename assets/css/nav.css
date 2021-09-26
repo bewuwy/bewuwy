@@ -1,0 +1,22 @@
+nav {
+  margin-left: 1vw;
+  display: inline-block;
+  position: fixed;
+}
+nav a {
+  margin: 1vw;
+  color: white;
+  font-size: 3.5vh;
+  font-weight: normal;
+  vertical-align: 2%;
+}
+nav a:hover {
+  opacity: 0.7;
+}
+nav span {
+  font-size: 4vh;
+  font-weight: bold;
+}
+#navLinks a {
+  margin-left: 3.3em;
+}
