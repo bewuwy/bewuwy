@@ -1,0 +1,27 @@
+.iconbox img {
+  height: 4vh;
+  margin-right: 0.5vw;
+  width: auto;
+  transition-property: transform;
+  transition-duration: 0.7s;
+}
+.iconbox img:hover {
+  opacity: 0.7;
+  transform: rotate(360deg);
+}
+
+.pfp {
+  height: 50vh;
+  width: auto;
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+.pfp.jump {
+  top: -2.5vh;
+}
+.pfp.flip {
+  transition-property: transform;
+  transition-duration: 0.9s;
+  transform: rotate(360deg);
+}

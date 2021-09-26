@@ -8,8 +8,34 @@ head_include: script_index.html
 {% include nav.html title="start()" %}
 <div class="banner" id="start">
   <div class="center">
-    <img src="/assets/pfp/pfp-neon.webp" class="pfp" alt="bewu icon">
-    <h1>bewu</h1>
+    <img src="/assets/pfp/pfp-neon.webp" class="pfp" id="pfp" alt="bewu icon"><br>
+    <a id="caption" style="color: white; display: inline-block;"><h1>bewu</h1></a>
+    <script>
+      $("#pfp").hover(function() {
+        $("#pfp").addClass("jump");
+      },
+      function() {
+        $("#pfp").removeClass("jump");
+      })
+
+      $("#pfp").click(function() {
+        $('#pfp').addClass('flip');
+        setTimeout(function() {$('#pfp').removeClass('flip');}, 910);
+      });
+
+      $("#caption").click(function() {
+        function randomInRange(min, max) {
+          return Math.random() * (max - min) + min;
+        }
+
+        confetti({
+          angle: randomInRange(55, 125),
+          spread: randomInRange(50, 70),
+          particleCount: randomInRange(50, 150),
+          origin: { y: 0.6 }
+        });
+      })
+    </script>
 
     <div class="iconbox">
       <a href="https://github.com/bewuwy" title="bewuwy" rel="noreferrer" target="_blank">

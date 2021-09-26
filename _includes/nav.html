@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="/assets/css/nav.css">
 
 <nav id="nav">
-    <span>bewu</span>
+    <a style="margin: 0;" id="jumpClick"><span>bewu</span></a>
     <div id="links" style="display: inline;">
       <a alt="bewu.ga" href="/" rel="prev" style="margin: 0;" id="navTitle">.{{ include.title }}</a>
       <div style="display: none;" id="navLinks">
@@ -22,6 +22,11 @@
       $("#navLinks").slideUp({
         duration: 400,
     });
+    })
+
+    $("#jumpClick").click(function() {
+      $('#pfp').addClass('jump');
+      setTimeout(function() {$('#pfp').removeClass('jump');}, 300);
     })
   }
 </script>

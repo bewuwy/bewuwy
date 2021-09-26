@@ -10,23 +10,10 @@
   src: url(/assets/fonts/Poppins-SemiBold.ttf);
   font-display: swap;
 }
-
-#page-container {
-  position: relative;
-  min-height: 100vh;
-}
-#content-wrap {
-  padding-bottom: 10rem;
-}
-.banner {
-  width: auto;
-  height: 100vh;
-  vertical-align: middle;
-}
 @media (max-width:800px) {
   .center {
     margin: 5%;
-    margin-top: 1%;
+    margin-top: 2%;
     margin-bottom: 1%;
     height: 80%;
     width: 90%;
@@ -37,7 +24,7 @@
 @media (min-width:801px) {
   .center {
     margin: 25%;
-    margin-top: 1%;
+    margin-top: 2%;
     margin-bottom: 1%;
     height: 80%;
     width: 50%;
@@ -45,17 +32,27 @@
     display: inline-block;
   }
 }
-.iconbox img {
-  height: 4vh;
-  margin-right: 0.5vw;
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+#content-wrap {
+  padding-bottom: 10rem;
+}
+body {
+  background-color: #131516;
+  color: white;
+  font-family: 'Poppins';
+  margin: 0;
+  padding:0;
+}
+.banner {
   width: auto;
-  transition-property: transform;
-  transition-duration: 0.7s;
+  height: 100vh;
+  vertical-align: middle;
 }
-.iconbox img:hover {
-  opacity: 0.7;
-  transform: rotate(360deg);
-}
+
 .arrowDiv {
   margin: 9vh;
 }
@@ -65,16 +62,7 @@
 .arrow:hover {
   opacity: 1;
 }
-.pfp {
-  height: 50vh;
-  width: auto;
-  position: relative;
-  top: 0;
-  transition: top ease 0.3s;
-}
-.pfp:hover {
-  top: -2.5vh;
-}
+
 .f20 {
   font-weight: bold;
   font-size: 2.7vh;
@@ -85,13 +73,6 @@
   margin-right: 3%;
 }
 
-body {
-  background-color: #131516;
-  color: white;
-  font-family: 'Poppins';
-  margin: 0;
-  padding:0;
-}
 a {
   color: #1a85ff;
   font-weight: bold;
