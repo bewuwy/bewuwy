@@ -1,7 +1,7 @@
 .iconbox img {
-  height: 4vh;
+  height: auto;
+  width: 2.1vw;
   margin-right: 0.5vw;
-  width: auto;
   transition-property: transform;
   transition-duration: 0.7s;
 }
