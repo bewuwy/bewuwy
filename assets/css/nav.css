@@ -25,5 +25,13 @@ nav span {
   font-weight: bold;
 }
 #navLinks a {
-  margin-left: 3.3em;
+  margin-left: 4em;
+  font-size: 3vh;
+}
+
+#nav {
+  transition: transform 0.2s;
+}
+#nav:hover {
+  transform: scale(1.05);
 }

@@ -1,6 +1,4 @@
 .iconbox img {
-  height: auto;
-  width: 2.1vw;
   margin-right: 0.5vw;
   transition-property: transform;
   transition-duration: 0.7s;
@@ -10,9 +8,28 @@
   transform: rotate(360deg);
 }
 
+@media (max-width:800px) {
+  .pfp {
+    height: 40vh;
+    width: auto;
+  }
+  .iconbox img {
+    height: auto;
+    width: 8.5vw;
+  }
+}
+@media (min-width:801px) {
+  .pfp {
+    height: 50vh;
+    width: auto;
+  }
+  .iconbox img {
+    height: auto;
+    width: 2.1vw;
+  }
+}
+
 .pfp {
-  height: 50vh;
-  width: auto;
   position: relative;
   top: 0;
   transition: top ease 0.5s;
@@ -24,4 +41,11 @@
   transition-property: transform;
   transition-duration: 0.9s;
   transform: rotate(360deg);
+}
+
+#caption {
+  transition: transform 0.2s;
+}
+#caption:hover {
+  transform: scale(1.2);
 }

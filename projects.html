@@ -16,10 +16,10 @@ repositories:
   - YIAY-us-discord-bot
 ---
 
-{% include nav.html title="projects()" %}
+{% include nav.html %}
 
-<div class="center" style="margin: 15%; margin-top: 1%; margin-bottom: 1%; width: 70%;">
-  <h1>moje projekty</h1>
+<div class="center">
+  <h1>my projects</h1>
 
   {% for i in page.repositories %}
   <a href="https://github.com/{{ page.github_user }}/{{ i }}" rel="noreferrer" target="_blank">

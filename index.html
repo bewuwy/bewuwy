@@ -5,78 +5,51 @@ description: hej, jestem bewu aka bewuwy, jestem komputerświrem. no, i to jest 
 head_include: script_index.html
 ---
 
-{% include nav.html title="start()" %}
-<div class="banner" id="start">
-  <div class="center">
-    <img src="/assets/pfp/pfp-neon.webp" class="pfp" id="pfp" alt="bewu icon"><br>
-    <a id="caption" style="color: white; display: inline-block;"><h1>bewu</h1></a>
-    <script>
-      $("#pfp").hover(function() {
-        $("#pfp").addClass("jump");
-      },
-      function() {
-        $("#pfp").removeClass("jump");
-      })
+{% include nav.html %}
+<div class="center">
+  <img src="/assets/pfp/pfp-neon.webp" class="pfp" id="pfp" alt="bewu icon"><br>
+  <a id="caption" style="color: white; display: inline-block;"><h1>bewu</h1></a>
+  <script>
+    $("#pfp").hover(function() {
+      $("#pfp").addClass("jump");
+    },
+    function() {
+      $("#pfp").removeClass("jump");
+    })
 
-      $("#pfp").click(function() {
-        $('#pfp').addClass('flip');
-        setTimeout(function() {$('#pfp').removeClass('flip');}, 910);
+    $("#pfp").click(function() {
+      $('#pfp').addClass('flip');
+      setTimeout(function() {$('#pfp').removeClass('flip');}, 910);
+    });
+
+    $("#caption").click(function() {
+      function randomInRange(min, max) {
+        return Math.random() * (max - min) + min;
+      }
+
+      confetti({
+        angle: randomInRange(55, 125),
+        spread: randomInRange(50, 70),
+        particleCount: randomInRange(50, 150),
+        origin: { y: 0.6 }
       });
+    })
+  </script>
 
-      $("#caption").click(function() {
-        function randomInRange(min, max) {
-          return Math.random() * (max - min) + min;
-        }
+  <div class="iconbox">
+    <a href="https://discord.com/users/548533107914047491" title="bewu#0764" rel="noreferrer" target="_blank">
+    <img src="assets/icons/discord.svg" alt="Discord"></a>
 
-        confetti({
-          angle: randomInRange(55, 125),
-          spread: randomInRange(50, 70),
-          particleCount: randomInRange(50, 150),
-          origin: { y: 0.6 }
-        });
-      })
-    </script>
+    <a href="https://github.com/bewuwy" title="bewuwy" rel="noreferrer" target="_blank">
+    <img src="assets/icons/github.svg" alt="Github"></a>
 
-    <div class="iconbox">
-      <a href="https://discord.com/users/548533107914047491" title="bewu#0764" rel="noreferrer" target="_blank">
-      <img src="assets/icons/discord.svg" alt="Discord"></a>
+    <a href="https://www.youtube.com/channel/UCtu5KoWQvYRerzfRT5YYLlw/" title="bewuwy" rel="noreferrer" target="_blank">
+    <img src="assets/icons/yt.svg" alt="YouTube"></a>
 
-      <a href="https://github.com/bewuwy" title="bewuwy" rel="noreferrer" target="_blank">
-      <img src="assets/icons/github.svg" alt="Github"></a>
+    <a href="https://steamcommunity.com/id/bewuwy/" title="bewu" rel="noreferrer" target="_blank">
+    <img src="assets/icons/steam.svg" alt="Steam"></a>
 
-      <a href="https://www.youtube.com/channel/UCtu5KoWQvYRerzfRT5YYLlw/" title="bewuwy" rel="noreferrer" target="_blank">
-      <img src="assets/icons/yt.svg" alt="YouTube"></a>
-
-      <a href="https://steamcommunity.com/id/bewuwy/" title="bewu" rel="noreferrer" target="_blank">
-      <img src="assets/icons/steam.svg" alt="Steam"></a>
-
-      <a href="https://mine.ly/b3wu.1" title="b3wu" rel="noreferrer" target="_blank">
-      <img src="assets/icons/mc.svg" alt="Minecraft"></a>
-    </div>
-
-    {% include arrow.html title="o mnie" moveto="#about" %}
-  </div>
-</div>
-
-<div class="banner" id="about">
-  <div class="center">
-    <h2>siema, jestem bewu</h2>
-    <img src="assets/pfp/asking.webp" alt="bewu asking" style="height: 25vh; width: auto;" width="600" height="600">
-    <p>kim jestem?</p>
-    <p class="f16">świetnie, że pytasz: jestem bewu.</p>
-    <p class="f16">co to znaczy, że jestem bewu?</p>
-    <p class="f16">umiem klikać w komputer, no i zrobiłem parę projektów.</p>
-
-    {% include arrow.html title="moje projekty" moveto="#projects" %}
-  </div>
-</div>
-
-<div id="projects" style="height: 80vh;">
-  <div class="center">
-      <h2>moje projekty</h2>
-      <p class="f16">większość moich projektów napisałem w Pythonie i nie obchodzi mnie, że jest wolny</p>
-      <p class="f16">no i oprócz tego znam jeszcze podstawy Javy, C#, prawie C++, HTMLa, Javascripta i CSS</p>
-      <p class="f16">umiem jeszcze kopiować kod z stackoverflow</p>
-      <p class="f16"><a href="/projects" rel="next" alt="Projects">moje projekty</a></p>
+    <a href="https://mine.ly/b3wu.1" title="b3wu" rel="noreferrer" target="_blank">
+    <img src="assets/icons/mc.svg" alt="Minecraft"></a>
   </div>
 </div>

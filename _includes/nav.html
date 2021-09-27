@@ -3,30 +3,31 @@
 <nav id="nav">
     <a style="margin: 0;" id="jumpClick"><span>bewu</span></a>
     <div id="links" style="display: inline; font-family: fsm;">
-      <a alt="bewu.ga" href="/" rel="prev" style="margin: 0;" id="navTitle">.{{ include.title }}</a>
+      <a style="margin: 0;" id="navTitle">.menu</a>
       <div style="display: none;" id="navLinks">
-        {% unless include.title == "start()" %}<a href="/" rel="prev">.start()</a><br>{% endunless %}
-        {% unless include.title == "projects()" %}<a href="/projects" rel="next">.projects()</a>{% endunless %}
+        <a href="/" rel="prev">.start()</a><br>
+        <a href="/projects" rel="next">.projects()</a>
       </div>
     </div>
 </nav>
 
 <script type="text/javascript">
   window.onload = function() {
-    $("#nav").hover(function() {
-      $("#navLinks").slideDown({
-        duration: 400,
-    });
-    },
-    function() {
-      $("#navLinks").slideUp({
-        duration: 400,
-    });
-    })
+    $("#nav").hover(
+      function() {
+        $("#navLinks").slideDown(400);
+      },
+      function() {
+        setTimeout(function() {
+          $("#navLinks").slideUp(300);
+        }, 300);
+      }
+    );
 
     $("#jumpClick").click(function() {
+      $("#navLinks").slideToggle(300);
       $('#pfp').addClass('jump');
       setTimeout(function() {$('#pfp').removeClass('jump');}, 300);
-    })
+    });
   }
 </script>
