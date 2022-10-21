@@ -1,6 +1,9 @@
 :root {
   --bg-color: #000814;
   --second-color: #4cc9f0;
+
+  --in-bot-margin: 0.9em;
+  --el-bottom-margin: 0.1em;
 }
 
 html {
@@ -85,6 +88,28 @@ body {
   animation-iteration-count: infinite;
 }
 
+#socials {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#socials img {
+  margin-right: 0.5rem;
+  transition-property: transform;
+  transition-duration: 0.7s;
+  height: auto;
+  width: 2.1rem;
+}
+#socials img:hover {
+  opacity: 0.7;
+  transform: rotate(360deg);
+}
+
+
+
 .hide {
   visibility: hidden;
 }
@@ -110,36 +135,16 @@ body {
 
 @keyframes jump {
   0% {
-    margin-bottom: 0.5rem;
+    margin-bottom: calc(var(--in-bot-margin) + var(--el-bottom-margin));
   }
   50% {
-    margin-bottom: 1rem;
+    margin-bottom: calc(var(--in-bot-margin) + var(--el-bottom-margin) + 0.5rem);
   }
   100% {
-    margin-bottom: 0.5rem;
+    margin-bottom: calc(var(--in-bot-margin) + var(--el-bottom-margin));
   }
 }
 
 .stay {
   position: fixed;
-}
-
-.iconbox {
-  width: 100%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.iconbox img {
-  margin-right: 0.5rem;
-  transition-property: transform;
-  transition-duration: 0.7s;
-  height: auto;
-  width: 2.1rem;
-}
-.iconbox img:hover {
-  opacity: 0.7;
-  transform: rotate(360deg);
 }
