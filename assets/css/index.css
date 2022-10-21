@@ -1,51 +1,145 @@
+:root {
+  --bg-color: #000814;
+  --second-color: #4cc9f0;
+}
+
+html {
+  background-color: var(--bg-color);
+  color: white;
+
+  font-family: Roboto;
+}
+
+body {
+  margin: 0;
+}
+
+.page {
+  height: 100vh;
+  width: calc(100% - 20rem);
+
+  /*   position: relative; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  margin-left: 10rem;
+  margin-right: 10rem;
+
+  transition: all 1s;
+}
+
+.page .title {
+  font-size: 10rem;
+  font-weight: 200;
+
+  max-width: 50%;
+
+  position: absolute;
+
+  transition: all 1s;
+}
+
+.title .subtitle {
+  font-size: 3rem;
+}
+
+.title .color {
+  font-weight: 400;
+  color: var(--second-color);
+}
+
+#img {
+  /*   position: absolute; */
+  height: 70vh;
+
+  transition: all 1s;
+
+  margin: 0;
+  margin-left: auto;
+
+  align-self: flex-end;
+}
+
+/* #img-wrap {
+  margin: 0;
+  margin-left: auto;
+
+  align-self: flex-end;
+} */
+
+.page-bottom {
+  position: absolute;
+  width: 3rem;
+
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.5rem;
+}
+
+#arrow {
+  animation: jump 1.5s ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.hide-display {
+  display: none;
+}
+
+.show {
+  display: inline;
+  visibility: visible;
+  animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes jump {
+  0% {
+    margin-bottom: 0.5rem;
+  }
+  50% {
+    margin-bottom: 1rem;
+  }
+  100% {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.stay {
+  position: fixed;
+}
+
+.iconbox {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .iconbox img {
-  margin-right: 0.5vw;
+  margin-right: 0.5rem;
   transition-property: transform;
   transition-duration: 0.7s;
+  height: auto;
+  width: 2.1rem;
 }
 .iconbox img:hover {
   opacity: 0.7;
   transform: rotate(360deg);
-}
-
-@media (max-width:800px) {
-  .pfp {
-    height: 40vh;
-    width: auto;
-  }
-  .iconbox img {
-    height: auto;
-    width: 8.5vw;
-  }
-}
-@media (min-width:801px) {
-  .pfp {
-    height: 50vh;
-    width: auto;
-  }
-  .iconbox img {
-    height: auto;
-    width: 2.1vw;
-  }
-}
-
-.pfp {
-  position: relative;
-  top: 0;
-  transition: top ease 0.5s;
-}
-.pfp.jump {
-  top: -2.5vh;
-}
-.pfp.flip {
-  transition-property: transform;
-  transition-duration: 0.9s;
-  transform: rotate(360deg);
-}
-
-#caption {
-  transition: transform 0.2s;
-}
-#caption:hover {
-  transform: scale(1.2);
 }

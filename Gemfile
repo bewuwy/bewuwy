@@ -8,4 +8,4 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 gem "jekyll"
 gem "webrick"
 gem 'jekyll-sitemap'
-gem 'jekyll-autoprefixer', "1.0.1"
+gem "jekyll-autoprefixer", "~> 1.0"

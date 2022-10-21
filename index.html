@@ -5,51 +5,39 @@ description: hej, jestem bewu aka bewuwy, jestem komputerświrem. no, i to jest 
 head_include: script_index.html
 ---
 
-{% include nav.html %}
-<div class="center">
-  <img src="/assets/pfp/pfp-neon.webp" class="pfp" id="pfp" alt="bewu icon"><br>
-  <a id="caption" style="color: white; display: inline-block;"><h1>bewu</h1></a>
-  <script>
-    $("#pfp").hover(function() {
-      $("#pfp").addClass("jump");
-    },
-    function() {
-      $("#pfp").removeClass("jump");
-    })
+<div class="page stay" id='page1'>
+  <span class='title' id='title'>I'm a <span class='color'>dev</span>, that<span class='subtitle hide-display'
+      id='sub1'>'s it sadly</span><span class='subtitle' id='sub2'>...</span></span>
 
-    $("#pfp").click(function() {
-      $('#pfp').addClass('flip');
-      setTimeout(function() {$('#pfp').removeClass('flip');}, 910);
-    });
+  <!--   <div id='img-wrap'> -->
+  <img id='img' src="https://bewu.dev/assets/pfp/pfp-neon.webp">
 
-    $("#caption").click(function() {
-      function randomInRange(min, max) {
-        return Math.random() * (max - min) + min;
-      }
-
-      confetti({
-        angle: randomInRange(55, 125),
-        spread: randomInRange(50, 70),
-        particleCount: randomInRange(50, 150),
-        origin: { y: 0.6 }
-      });
-    })
-  </script>
-
-  <div class="iconbox">
+  <div class="iconbox hide" id='socials'>
     <a href="https://discord.com/users/548533107914047491" title="bewu#0764" rel="noreferrer" target="_blank">
-    <img src="assets/icons/discord.svg" alt="Discord"></a>
+      <img src="https://raw.githubusercontent.com/bewuwy/bewuwy/main/assets/icons/discord.svg" alt="Discord"></a>
 
     <a href="https://github.com/bewuwy" title="bewuwy" rel="noreferrer" target="_blank">
-    <img src="assets/icons/github.svg" alt="Github"></a>
+      <img src="https://raw.githubusercontent.com/bewuwy/bewuwy/main/assets/icons/github.svg" alt="Github"></a>
 
     <a href="https://www.youtube.com/channel/UCtu5KoWQvYRerzfRT5YYLlw/" title="bewuwy" rel="noreferrer" target="_blank">
-    <img src="assets/icons/yt.svg" alt="YouTube"></a>
+      <img src="https://raw.githubusercontent.com/bewuwy/bewuwy/main/assets/icons/yt.svg" alt="YouTube"></a>
 
     <a href="https://steamcommunity.com/id/bewuwy/" title="bewu" rel="noreferrer" target="_blank">
-    <img src="assets/icons/steam.svg" alt="Steam"></a>
+      <img src="https://raw.githubusercontent.com/bewuwy/bewuwy/main/assets/icons/steam.svg" alt="Steam"></a>
 
     <a href="https://mine.ly/b3wu.1" title="b3wu" rel="noreferrer" target="_blank">
-    <img src="assets/icons/mc.svg" alt="Minecraft"></a>
+      <img src="https://raw.githubusercontent.com/bewuwy/bewuwy/main/assets/icons/mc.svg" alt="Minecraft"></a>
   </div>
+  <!--   </div> img wrap -->
+
+  <svg class='page-bottom' id='arrow' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+    <!-- Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+    <path fill='white'
+      d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+  </svg>
+
 </div>
+
+<div class='page'></div>
+
+<div class='page'></div>
