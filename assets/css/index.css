@@ -45,34 +45,34 @@ body {
   transition: all 1s;
 }
 
-  #page1 {
-    width: calc(100% - 30rem);
-    margin: 0 15rem;
-  }
+#page1 {
+  width: calc(100% - 30rem);
+  margin: 0 15rem;
+}
 
-  .page .narrow {
-    width: calc(100% - 20rem);
-    margin: 0 10rem;
-  }
+.page .narrow {
+  width: calc(100% - 20rem);
+  margin: 0 10rem;
+}
 
 .title {
   font-size: 10rem;
   font-weight: 200;
 
   transition: all 1s;
-  
+
   /* position: absolute; */
   grid-row: 1;
 }
 
-  .title .subtitle {
-    font-size: 3rem;
-  }
+.title .subtitle {
+  font-size: 3rem;
+}
 
-  .title .color {
-    font-weight: 400;
-    color: var(--second-color);
-  }
+.title .color {
+  font-weight: 400;
+  color: var(--second-color);
+}
 
 #img {
   /*   position: absolute; */
@@ -93,32 +93,32 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
+
   align-self: flex-start;
   margin-top: 2rem;
   margin-bottom: 1.4rem;
-  
+
   grid-row: 2/2;
   grid-column: 1/3;
 }
 
-  #arrow span {
-    animation: jump 2.5s ease-in-out;
-    animation-iteration-count: infinite;
+#arrow span {
+  animation: jump 2.5s ease-in-out;
+  animation-iteration-count: infinite;
 
-    margin-bottom: 0.2rem;
-  }
+  margin-bottom: 0.2rem;
+}
 
-  #arrow svg {
-    animation: jump 2.5s ease-in-out;
-    animation-iteration-count: infinite;
+#arrow svg {
+  animation: jump 2.5s ease-in-out;
+  animation-iteration-count: infinite;
 
-    /* grid-row: 2; */
-    width: 3rem;
-    flex-grow: 1;
-  }
+  /* grid-row: 2; */
+  width: 3rem;
+  flex-grow: 1;
+}
 
-#socials {
+#iconbox {
   grid-row: 2;
   grid-column: 1/3;
 
@@ -132,17 +132,18 @@ body {
   translate: 0px max(-10rem, calc(var(--scrolled-down)/1.5));
 }
 
-  #socials img {
-    margin-right: 0.5rem;
-    transition-property: transform;
-    transition-duration: 0.7s;
-    height: auto;
-    width: 2.4rem;
-  }
-  #socials img:hover {
-    opacity: 0.7;
-    transform: rotate(360deg);
-  }
+#iconbox img {
+  margin-right: 0.5rem;
+  transition-property: transform;
+  transition-duration: 0.7s;
+  height: auto;
+  width: 2.4rem;
+}
+
+#iconbox img:hover {
+  opacity: 0.7;
+  transform: rotate(360deg);
+}
 
 .hide {
   visibility: hidden;
@@ -170,6 +171,7 @@ body {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -179,9 +181,11 @@ body {
   0% {
     translate: 0px calc(var(--scrolled-down) - .5rem);
   }
+
   50% {
-    translate: 0px calc(var(--scrolled-down) - 1.5rem);  
+    translate: 0px calc(var(--scrolled-down) - 1.5rem);
   }
+
   100% {
     translate: 0px calc(var(--scrolled-down) - .5rem);
   }
