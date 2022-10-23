@@ -5,6 +5,16 @@
   --scrolled-down: 0.1em;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  #img {
+    scale: 0.5;
+  }
+
+  .title {
+    scale: 0.5;
+  }
+}
+
 html {
   background-color: var(--bg-color);
   color: white;
@@ -30,10 +40,20 @@ body {
 
   margin-left: 10rem;
   margin-right: 10rem;
-  padding-top: 5rem;
+  padding-top: 3rem;
 
   transition: all 1s;
 }
+
+  #page1 {
+    width: calc(100% - 30rem);
+    margin: 0 15rem;
+  }
+
+  .page .narrow {
+    width: calc(100% - 20rem);
+    margin: 0 10rem;
+  }
 
 .title {
   font-size: 10rem;
@@ -142,6 +162,10 @@ body {
   position: fixed;
 }
 
+.scale-05 {
+  scale: 0.5;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -153,12 +177,12 @@ body {
 
 @keyframes jump {
   0% {
-    translate: 0px var(--scrolled-down);
+    translate: 0px calc(var(--scrolled-down) - .5rem);
   }
   50% {
     translate: 0px calc(var(--scrolled-down) - 1.5rem);  
   }
   100% {
-    translate: 0px var(--scrolled-down);
+    translate: 0px calc(var(--scrolled-down) - .5rem);
   }
 }

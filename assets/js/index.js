@@ -1,3 +1,4 @@
+// scroll animation
 window.addEventListener("scroll", function () {
   showFunction();
 });
@@ -21,8 +22,8 @@ function showFunction() {
   
   if (scrollAmount > scrollToTrigger) {
     // document.getElementById(id1).style.display = "inline";
-    title.style.transform = "scale(0.5)";
-    img.style.transform = "scale(0.5)";
+    title.classList.add('scale-05');
+    img.classList.add('scale-05');
     
     e2.style.display = "none";
     
@@ -33,12 +34,11 @@ function showFunction() {
     socials.classList.remove("hide");
     
     arrow.style.visibility = "hidden";
-    
-    p.style.width = "calc(100% - 30rem)";
-    p.style.margin = "0 15rem";
+
+    p.classList.remove('narrow');
   } else {
-    title.style.transform = "scale(1)";
-    img.style.transform = "scale(1)";
+    title.classList.remove('scale-05');
+    img.classList.remove('scale-05');
     
     e2.style.display = "inline";
     
@@ -50,7 +50,6 @@ function showFunction() {
     
     arrow.style.visibility = "visible";
     
-    p.style.width = "calc(100% - 20rem)";
-    p.style.margin = "0 10rem";
+    p.classList.add('narrow')
   }
 }
