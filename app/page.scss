@@ -23,7 +23,14 @@ div {
 
 .tile {
     padding: 10% 2.5vw;
-    padding-top: 15%;
+    justify-content: center;
+}
+
+.me {
+    .tile {
+        padding: 5% 2.5vw;
+        justify-content: space-around;
+    } 
 }
 
 .rhs {
@@ -62,32 +69,79 @@ div {
             flex-direction: column;
             width: 50%;
             gap: 3vh;
-            border-bottom: 6px solid black;
         }
 
         .projects {
             background-color: $primary-color;
             border-right: 6px solid black;
+            border-bottom: 6px solid black;
         }
 
         .me {
             height: 100%;
             gap: 0;
+            border-bottom: 6px solid black;
 
             div {
                 width: 100%;
             }
 
             .about {
-                height: 40%;
+                height: 35%;
                 background-color: $contrast-color;
+                border-bottom: 6px solid black;
+
+                .buttons {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    span {
+                        font-size: 1.3em;
+
+                        $margin: 1vw;
+
+                        &::before {
+                            content: "-";
+                            margin-right: $margin;
+                        }
+                        &::after {
+                            content: "-";
+                            margin-left: $margin;
+                        }
+
+                    }
+                }
             }
 
             .literally-me {
                 flex-grow: 1;
 
                 background-color: $secondary-color;
-                border-bottom: none;
+
+                .image-container {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                    height: 100%;
+
+                    .image-wrapper {
+                        position: relative;
+                        // width: 40vw;
+                        // max-height: 30vh;
+                        // max-width: 30vh;
+                        aspect-ratio: 1/1;
+                        height: 100%;
+                        width: auto;
+                    }
+
+                    span {
+                        text-align: right;
+                        width: 10vw;
+                        // padding-left: 10vw;
+                    }
+                }
             }
         }
     }
