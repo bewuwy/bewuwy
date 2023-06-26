@@ -1,5 +1,7 @@
 @import 'style.scss';
 
+$border: 6px solid black;
+
 main {
     display: flex;
     flex-direction: row;
@@ -10,8 +12,8 @@ div {
 }
 
 .bewu-text {
-    border-bottom: 6px solid black;
-    border-right: 6px solid black;
+    border-bottom: $border;
+    border-right: $border;
     height: 100vh;
 
     span {
@@ -24,6 +26,10 @@ div {
 .tile {
     padding: 10% 2.5vw;
     justify-content: center;
+
+    background-color: $bg-color;
+
+    transition: background-color 0.5s ease-out;
 }
 
 .me {
@@ -41,7 +47,7 @@ div {
     .hi {
         width: 100%;
         text-align: center;
-        border-bottom: 6px solid black;
+        border-bottom: $border;
         font-size: 3vh;
         padding-top: 1vh;
         padding-bottom: 1vh;
@@ -72,15 +78,18 @@ div {
         }
 
         .projects {
-            background-color: $primary-color;
-            border-right: 6px solid black;
-            border-bottom: 6px solid black;
+            border-right: $border;
+            border-bottom: $border;
+
+            &:hover {
+                background-color: $primary-color;
+            }
         }
 
         .me {
             height: 100%;
             gap: 0;
-            border-bottom: 6px solid black;
+            border-bottom: $border;
 
             div {
                 width: 100%;
@@ -88,8 +97,11 @@ div {
 
             .about {
                 height: 35%;
-                background-color: $contrast-color;
-                border-bottom: 6px solid black;
+                border-bottom: $border;
+
+                &:hover {
+                    background-color: $contrast-color;
+                }
 
                 .buttons {
                     display: flex;
@@ -117,7 +129,13 @@ div {
             .literally-me {
                 flex-grow: 1;
 
-                background-color: $secondary-color;
+                &:hover {
+                    background-color: $secondary-color;
+
+                    .image {
+                        filter: none !important;
+                    }
+                }
 
                 .image-container {
                     display: flex;
@@ -134,6 +152,11 @@ div {
                         aspect-ratio: 1/1;
                         height: 100%;
                         width: auto;
+                    
+                        .image {
+                            transition: all 1s ease-out;
+                            filter: grayscale(1);
+                        }
                     }
 
                     span {

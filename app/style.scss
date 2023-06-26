@@ -2,8 +2,10 @@ $primary-color: #9BCDD2;
 $secondary-color: #FAF0E4;
 $contrast-color: #FF8551;
 
+$bg-color: white;
+
 body {
-    background-color: white;
+    background-color: $bg-color;
     margin: 0;
 }
 
