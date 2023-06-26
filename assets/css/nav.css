@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: fsm;
   font-weight: bold;
   src: url(/assets/fonts/FantasqueSansMono-Regular.ttf);
@@ -34,4 +34,4 @@ nav span {
 }
 #nav:hover {
   transform: scale(1.05);
-}
+} */

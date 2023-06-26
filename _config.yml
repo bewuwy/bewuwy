@@ -1,4 +1,4 @@
 url: "https://bewu.dev" # the base hostname & protocol for your site
 plugins:
   - jekyll-sitemap
-  - jekyll-autoprefixer
+  # - jekyll-autoprefixer

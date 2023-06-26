@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns#" lang="pl">
+<html prefix="og: http://ogp.me/ns#" lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,8 +7,8 @@
 
     <title>{{ page.title }}</title>
     <meta name="description" content="{{ page.description }}" />
-    <meta name="keywords" content="bewu, bewuwy, bewu69, bartek, włodarczyk" />
-    <meta name="author" content="Bartek Włodarczyk" />
+    <meta name="keywords" content="bewu, bewuwy" />
+    <meta name="author" content="bewu" />
 
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="og:description" content="{{ page.description }}" />
@@ -20,15 +20,14 @@
     <meta property="og:image:alt" content="bewu" />
     <meta property="og:type" content="website" />
 
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="preload" href="/assets/css/style.css" as="style" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
 
     <link rel="icon" href="/favicon.ico" />
-    <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="sitemap" href="/sitemap.xml" />
 
-    <script src="/assets/js/jquery-3.6.0.min.js"></script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YKRD4YLEYG"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -36,26 +35,15 @@
       gtag('js', new Date());
 
       gtag('config', 'G-YKRD4YLEYG');
-    </script>
+    </script> -->
 
     {% if page.head_include %}
       {% include {{ page.head_include }} %}
     {% endif %}
   </head>
   <body>
-    <div id="page-container">
-      {% unless page.nofooter %}
-      <div id="content-wrap">
-      {% endunless %}
-        {{ content }}
-      {% unless page.nofooter %}
-      </div>
-      {% endunless %}
 
-      {% unless page.nofooter %}
-        {% include footer.html %}
-      {% endunless %}
-    </div>
+    {{ content }}
 
   </body>
 </html>
