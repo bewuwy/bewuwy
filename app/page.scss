@@ -1,0 +1,171 @@
+@import 'style.scss';
+
+$border: 6px solid black;
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.bewu-text {
+    border-bottom: $border;
+    border-right: $border;
+    height: 100vh;
+
+    span {
+        rotate: 180deg;
+        writing-mode: vertical-rl;
+        font-size: 23vh;
+    }
+}
+
+.tile {
+    padding: 10% 2.5vw;
+    justify-content: center;
+
+    background-color: $bg-color;
+
+    transition: background-color 0.5s ease-out;
+}
+
+.me {
+    .tile {
+        padding: 5% 2.5vw;
+        justify-content: space-around;
+    } 
+}
+
+.rhs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .hi {
+        width: 100%;
+        text-align: center;
+        border-bottom: $border;
+        font-size: 3vh;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+    }
+
+    .content {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+
+        .title {
+            font-size: 8vh;
+        }
+
+        .subtitle {
+            font-size: 4vh;
+        }
+
+        .annotation {
+            font-size: 2vh;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            gap: 3vh;
+        }
+
+        .projects {
+            border-right: $border;
+            border-bottom: $border;
+
+            &:hover {
+                background-color: $primary-color;
+            }
+        }
+
+        .me {
+            height: 100%;
+            gap: 0;
+            border-bottom: $border;
+
+            div {
+                width: 100%;
+            }
+
+            .about {
+                height: 35%;
+                border-bottom: $border;
+
+                &:hover {
+                    background-color: $contrast-color;
+                }
+
+                .buttons {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    span {
+                        font-size: 1.3em;
+
+                        $margin: 1vw;
+
+                        &::before {
+                            content: "-";
+                            margin-right: $margin;
+                        }
+                        &::after {
+                            content: "-";
+                            margin-left: $margin;
+                        }
+
+                    }
+                }
+            }
+
+            .literally-me {
+                flex-grow: 1;
+
+                &:hover {
+                    background-color: $secondary-color;
+
+                    .image {
+                        filter: none !important;
+                    }
+                }
+
+                .image-container {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                    height: 100%;
+
+                    .image-wrapper {
+                        position: relative;
+                        // width: 40vw;
+                        // max-height: 30vh;
+                        // max-width: 30vh;
+                        aspect-ratio: 1/1;
+                        height: 100%;
+                        width: auto;
+                    
+                        .image {
+                            transition: all 1s ease-out;
+                            filter: grayscale(1);
+                        }
+                    }
+
+                    span {
+                        text-align: right;
+                        width: 10vw;
+                        // padding-left: 10vw;
+                    }
+                }
+            }
+        }
+    }
+}

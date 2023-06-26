@@ -1,0 +1,20 @@
+$primary-color: #9BCDD2;
+$secondary-color: #FAF0E4;
+$contrast-color: #FF8551;
+
+$bg-color: white;
+
+body {
+    background-color: $bg-color;
+    margin: 0;
+}
+
+button, a[role="button"] {
+    background-color: black;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 0.6em 1.6em;
+    width: fit-content;
+}
