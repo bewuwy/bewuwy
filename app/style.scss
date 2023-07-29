@@ -10,11 +10,60 @@ body {
 }
 
 button, a[role="button"] {
-    background-color: black;
     border: none;
     color: white;
     cursor: pointer;
     font-size: 1.2em;
     padding: 0.6em 1.6em;
     width: fit-content;
+    position: relative;
+
+    background: transparent;
+
+    * {
+        transition: transform 0.2s ease-in-out;
+    }
+
+    $move: 6px;
+
+    &:hover > :nth-child(1) {
+        transform: translate(-$move, $move);
+    }
+
+    &:hover > :nth-child(3) {
+        transform: translate($move, -$move);
+    }
+
+    &:hover > span {
+        transform: translate($move, -$move);
+    }
+
+    .bg {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+
+    .black {
+        background-color: black;
+    }
+
+    .primary {
+        background-color: $primary-color;
+    }
+
+    .contrast {
+        background-color: $contrast-color;
+    }
+
+    span {
+        position: relative;
+        display: inline-block;
+        z-index: 2;
+    }
 }

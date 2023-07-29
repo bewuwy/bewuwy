@@ -4,6 +4,29 @@ import Image from 'next/image';
 
 const fredoka = Fredoka({ weight: "400", subsets: ["latin"] });
 
+function Button({ text, reverse }: { text?: string, reverse?: boolean }) {
+
+  if (reverse) {
+    return (
+      <button className='reverse'>
+        <div className='bg contrast'></div>
+        <div className='bg primary'></div>
+        <div className='bg black'></div>
+        <span>{text ? text: "Button"}</span>
+      </button>
+    )
+  }
+
+  return (
+    <button>
+      <div className='bg primary'></div>
+      <div className='bg contrast'></div>
+      <div className='bg black'></div>
+      <span>{text ? text: "Button"}</span>
+    </button>
+  )
+}
+
 export default function Home() {
   return (
     <main className={fredoka.className}>
@@ -18,20 +41,20 @@ export default function Home() {
         <span className='hi'>Hi, I'm bewu and I'm a dev</span>
 
         <div className='content'>
-          <div className="projects tile">
+          <div className="projects tile half">
             <span className='title'>My projects</span>
             <span className='subtitle'>They may not be good, but they are mine</span>
-            <a role="button">See my projects</a>
+            <Button text="See my projects"/>
             <span className='annotation'>(actually they are good)</span>
           </div>
-          <div className='me'>
+          <div className='me half'>
             <div className='about tile'>
 
               <span className='title'>About me</span>
               <div className='buttons'>
-                <button>Read who I am</button>
-                <span>or</span>
-                <button>Contact me</button>
+                <Button text="Read who I am" reverse={true} />
+                <span className="or">or</span>
+                <Button text="Contact me" reverse={true} />
               </div>
             </div>
 

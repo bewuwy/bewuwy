@@ -70,7 +70,7 @@ div {
             font-size: 2vh;
         }
 
-        div {
+        .half {
             display: flex;
             flex-direction: column;
             width: 50%;
@@ -94,6 +94,10 @@ div {
             }
 
             .about {
+
+                display: flex;
+                flex-direction: column;
+
                 height: 35%;
                 border-bottom: $border;
 
@@ -101,10 +105,11 @@ div {
 
                 .buttons {
                     display: flex;
+                    gap: 2vw;
                     flex-direction: row;
                     align-items: center;
 
-                    span {
+                    .or {
                         font-size: 1.3em;
 
                         $margin: 1vw;
@@ -123,6 +128,9 @@ div {
             }
 
             .literally-me {
+                display: flex;
+                flex-direction: column;
+                gap: 3vh;
                 flex-grow: 1;
 
                 background-color: $secondary-color;
