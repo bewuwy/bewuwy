@@ -81,9 +81,7 @@ div {
             border-right: $border;
             border-bottom: $border;
 
-            &:hover {
-                background-color: $primary-color;
-            }
+            background-color: $primary-color;
         }
 
         .me {
@@ -99,9 +97,7 @@ div {
                 height: 35%;
                 border-bottom: $border;
 
-                &:hover {
-                    background-color: $contrast-color;
-                }
+                background-color: $contrast-color;
 
                 .buttons {
                     display: flex;
@@ -129,13 +125,7 @@ div {
             .literally-me {
                 flex-grow: 1;
 
-                &:hover {
-                    background-color: $secondary-color;
-
-                    .image {
-                        filter: none !important;
-                    }
-                }
+                background-color: $secondary-color;
 
                 .image-container {
                     display: flex;
@@ -152,11 +142,6 @@ div {
                         aspect-ratio: 1/1;
                         height: 100%;
                         width: auto;
-                    
-                        .image {
-                            transition: all 1s ease-out;
-                            filter: grayscale(1);
-                        }
                     }
 
                     span {
