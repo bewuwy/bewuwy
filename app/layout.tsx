@@ -1,7 +1,7 @@
 import './style.scss'
-import { Roboto } from 'next/font/google'
+import { Fredoka } from 'next/font/google';
 
-const roboto = Roboto({ weight: "400", subsets: ["latin"] })
+const fredoka = Fredoka({ weight: "400", subsets: ["latin"] });
 
 export const metadata = {
   title: 'bewu.dev',
@@ -15,7 +15,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={roboto.className}>{children}</body>
+      <body className={fredoka.className}>
+      
+        {/* navbar */}
+        <div className='flex justify-between items-center w-full py-4 px-8 absolute top-0 bg-contrast text-white'>
+          <a href="/">Bartek Włodarczyk</a>
+          <div className="flex gap-4">
+            <a href="/portfolio.pdf">CV</a>
+            <a href="/projects">Projects</a>
+            <a href="/about">About</a>
+          </div>
+        </div>
+
+        {children}
+      </body>
     </html>
   )
 }

@@ -1,2 +1,2 @@
-#### i make projects. yes.
+#### i program sometimes.
 [bewu.dev](https://bewu.dev)
