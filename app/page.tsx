@@ -5,7 +5,9 @@ export default function Home() {
     <main className='w-screen h-screen flex flex-col justify-center items-center'>
 
       <div className='flex flex-col justify-center items-center w-fit'>
-        <span className='text-6xl sm:text-7xl md:text-8xl'>bewu.dev</span>
+        <svg viewBox="0 -110 650 120" className='w-80 sm:w-[30rem] md:w-[35rem] lg:w-[40rem] h-auto drop-shadow-lg hover:drop-shadow-xl'>
+          <text className="svgText" x="0" y="0">bewu.dev</text>
+        </svg>
         <span className='text-lg'>i&apos;m Bartek and i&apos;m a dev</span>
       </div>
 
