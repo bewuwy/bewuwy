@@ -1,9 +1,9 @@
 
 export default function Tutoring() {
     return (
-        <main className='w-full h-screen flex flex-col justify-center items-center'>
+        <main className='w-full min-h-screen flex flex-col justify-center items-center'>
 
-            <div className="md:w-1/3 w-4/5 flex flex-col justify-center items-center gap-12">
+            <div className="md:w-1/3 w-4/5 mb-12 flex flex-col justify-center items-center gap-12">
 
                 <div className="flex flex-col justify-center items-center">
                     <h2 className="text-xl font-bold">Wlodarczyk Tutoring</h2>
@@ -20,7 +20,10 @@ export default function Tutoring() {
                     <p>I adapt each session to fit the student&apos;s needs, breaking down complex concepts into simpler steps. I keep things interactive, pushing students to solve problems on their own while offering support and guidance when needed. I believe in creating a relaxed and motivating environment that helps students gain confidence</p>
                 </div>
                 
-                <a href="https://bewu.dev/schedule" className="underline font-bold">Book a lesson with me!</a>
+                <div className="flex flex-col items-center">
+                    <a href="https://bewu.dev/schedule" className="underline font-bold">Book a lesson with me!</a>
+                    <p>18.50 EUR / 80 PLN for 60 min</p>
+                </div>
 
                 <div className="flex flex-col items-center">
                     <h2 className='text-lg mt-6'>Contact:</h2>
