@@ -22,6 +22,7 @@ export default function RootLayout({
           <a href="/">Bartek Włodarczyk</a>
           <div className="flex gap-4">
             <a href="/portfolio.pdf">CV</a>
+            <a href="/tutoring">Tutoring</a>
             <a href="/projects">Projects</a>
             <a href="/about">About</a>
           </div>
