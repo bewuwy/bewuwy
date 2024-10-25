@@ -21,7 +21,7 @@ export default function Tutoring() {
                 </div>
                 
                 <div className="flex flex-col items-center">
-                    <a href="https://bewu.dev/schedule" className="underline font-bold">Book a lesson with me!</a>
+                    <p>Contact me and book a lesson!</p>
                     <p>18.50 EUR / 80 PLN for 60 min</p>
                 </div>
 
@@ -31,10 +31,10 @@ export default function Tutoring() {
                 </div>
 
                 <div>
-                    <h2 className="mb-2">Details (company based in the Netherlands):</h2>
+                    <h2 className="mb-2">Details (based in the Netherlands):</h2>
                     <p>Wlodarczyk Tutoring Eenmanszaak</p>
                     <p>KVK-nummer: 95283005</p>
-                    <p>BTW-nummer: [NONE YET]</p>
+                    <p>BTW-id: NL005142382B51</p>
                 </div>
             </div>
         </main>
