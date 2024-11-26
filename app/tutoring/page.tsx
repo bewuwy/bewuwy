@@ -22,7 +22,7 @@ export default function Tutoring() {
                 
                 <div className="flex flex-col items-center">
                     <p>Contact me and book a lesson!</p>
-                    <p>20 EUR / 90 PLN for 60 min</p>
+                    <p>25 EUR/60 min</p>
                 </div>
 
                 <div className="flex flex-col items-center">
