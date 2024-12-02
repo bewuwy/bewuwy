@@ -5,6 +5,7 @@
 $bg-color: #F7EDE2;
 $primary-color: #F6BD60;
 $contrast-color: #84A59D;
+$link-color: #19698f;
 
 .bg-contrast {
     background-color: $contrast-color;
@@ -26,6 +27,10 @@ button, a[role="button"] {
     font-weight: 600;
     transition: all 0.3s;
     @apply drop-shadow-lg hover:drop-shadow-2xl;
+}
+
+.link {
+    color: $link-color;
 }
 
 a:not([role='button']) {
