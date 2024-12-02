@@ -1,3 +1,9 @@
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'IB Maths Tutoring | Wlodarczyk Tutoring',
+  description: 'Professional IB Mathematics AA online and on-site tutoring. Located in Delft, Netherlands, offering personalized lessons to help students excel.',
+}
 
 export default function Tutoring() {
     return (
