@@ -1,3 +1,13 @@
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'My projects | bewu.dev',
+  description: 'List of my (mostly hobby) projects.',
+  metadataBase: new URL('https://bewu.dev'),
+  alternates: {
+    canonical: "projects"
+  }
+}
 
 export default function Projects() {
     return (

@@ -6,7 +6,7 @@ const fredoka = Fredoka({ weight: "400", subsets: ["latin"] });
 
 export const metadata = {
   title: 'bewu.dev',
-  description: 'i\'m bewu',
+  description: 'i\'m bewu, a developer and student based in Delft',
 }
 
 export default function RootLayout({

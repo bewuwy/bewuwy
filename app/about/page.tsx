@@ -1,3 +1,13 @@
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'About me | bewu.dev',
+  description: 'Who even am I?',
+  metadataBase: new URL('https://bewu.dev'),
+  alternates: {
+    canonical: "about"
+  }
+}
 
 export default function About() {
     return (

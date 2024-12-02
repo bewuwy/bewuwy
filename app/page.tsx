@@ -8,7 +8,7 @@ export default function Home() {
         <svg viewBox="0 -110 650 120" className='pb-4 w-80 sm:w-[30rem] md:w-[35rem] lg:w-[40rem] h-auto drop-shadow-lg hover:drop-shadow-xl'>
           <text className="svgText" x="50%" y="0" textAnchor="middle">bewu.dev</text>
         </svg>
-        <span className='text-lg'>i&apos;m Bartek and i&apos;m a dev</span>
+        <h1 className='text-lg'>i&apos;m Bartek and i&apos;m a dev</h1>
       </div>
 
       <div className='flex justify-center items-center w-fit gap-4 mt-6'>
