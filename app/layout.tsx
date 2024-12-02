@@ -18,7 +18,7 @@ export default function RootLayout({
       <body className={fredoka.className}>
       
         {/* navbar */}
-        <div className='flex justify-between items-center w-full py-4 px-8 absolute top-0 bg-contrast text-white'>
+        <div className='flex justify-between items-center w-full py-4 px-8 top-0 bg-contrast text-white'>
           <a href="/">Bartek Włodarczyk</a>
           <div className="flex gap-4">
             <a href="/portfolio.pdf">CV</a>
