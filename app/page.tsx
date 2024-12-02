@@ -6,7 +6,7 @@ export default function Home() {
 
       <div className='flex flex-col justify-center items-center w-fit'>
         <svg viewBox="0 -110 650 120" className='pb-4 w-80 sm:w-[30rem] md:w-[35rem] lg:w-[40rem] h-auto drop-shadow-lg hover:drop-shadow-xl'>
-          <text className="svgText" x="50%" y="0" text-anchor="middle">bewu.dev</text>
+          <text className="svgText" x="50%" y="0" textAnchor="middle">bewu.dev</text>
         </svg>
         <span className='text-lg'>i&apos;m Bartek and i&apos;m a dev</span>
       </div>
