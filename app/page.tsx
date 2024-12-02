@@ -1,3 +1,14 @@
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'bewu.dev',
+  description: 'i\'m bewu, a developer and student based in Delft',
+  metadataBase: new URL('https://bewu.dev'),
+  alternates: {
+    canonical: "about"
+  }
+}
+
 import './page.scss';
 
 export default function Home() {

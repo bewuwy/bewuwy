@@ -1,13 +1,25 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'IB Maths Tutoring | Wlodarczyk Tutoring',
-  description: 'Professional IB Mathematics AA online and on-site tutoring. Located in Delft, Netherlands, offering personalized lessons to help students excel.',
-  metadataBase: new URL('https://bewu.dev'),
+  title: "IB Maths Tutoring | Wlodarczyk Tutoring",
+  description: "Professional IB Mathematics AA online and on-site tutoring. Located in Delft, Netherlands, offering personalized lessons to help students excel.",
+  metadataBase: new URL("https://bewu.dev"),
   alternates: {
-    canonical: "tutoring"
-  }
-}
+    canonical: "tutoring",
+  },
+  keywords: [
+    "IB Mathematics",
+    "Math Tutoring",
+    "IB Math AA",
+    "Delft Tutor",
+    "Online Math Tutoring",
+    "IB DP Mathematics",
+    "Math HL Tutor",
+    "Math SL Tutor",
+    "Netherlands Math Tutor",
+    "International Baccalaureate Math",
+  ],
+};
 
 export default function Tutoring() {
     return (
