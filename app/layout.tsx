@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import './style.scss'
 import { Fredoka } from 'next/font/google';
 
@@ -19,7 +20,7 @@ export default function RootLayout({
       
         {/* navbar */}
         <div className='flex justify-between items-center w-full py-4 px-8 top-0 bg-contrast text-white'>
-          <a href="/">Bartek Włodarczyk</a>
+          <Link href="/">Bartek Włodarczyk</Link>
           <div className="flex gap-4">
             <a href="/portfolio.pdf">CV</a>
             <a href="/tutoring">Tutoring</a>
