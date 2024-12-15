@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: "IB Maths Tutoring | Wlodarczyk Tutoring",
-  description: "Professional IB Mathematics AA online and on-site tutoring. Located in Delft, Netherlands, offering personalized lessons to help students excel.",
+  description: "Professional IB Mathematics AA online and on-site tutoring. I'm Bartek, located in Delft, Netherlands, and I offer personalized IB Math lessons to help both SL and HL students excel.",
   metadataBase: new URL("https://bewu.dev"),
   alternates: {
     canonical: "tutoring",
@@ -51,7 +51,7 @@ export default function Tutoring() {
                 <div className="flex flex-col items-center">
                     <h3 className='text-lg'>Contact:</h3>
                     <span>E-mail: <a href="mailto:tutoring@bewu.dev" className='link'>tutoring@bewu.dev</a></span>
-                    <span>WhatsApp: <a href='https://wa.me/+48739227787' className='link' target='blank'>Chat with me</a></span>
+                    <span>WhatsApp: <a href='https://wa.me/+31657123273' className='link' target='blank'>Chat with me</a></span>
                 </div>
 
                 <div className='mt-4'>
