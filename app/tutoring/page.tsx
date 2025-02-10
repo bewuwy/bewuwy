@@ -33,8 +33,12 @@ export default function Tutoring() {
                 </div>
 
                 <div>
+                    <p>Hi! I offer online and offline (Delft, Netherlands) Maths AA IB lessons! I have professional experience with tutoring Mathematics and I can help you reach the 7/7 (or any other mark :) ).</p>
+                </div>
+
+                <div>
                     <h2 className="text-lg font-bold">About me</h2>
-                    <p>Hi! I am currently a Computer Science and Engineering student at TU Delft, and I also tutor IB Mathematics AA (both SL and HL). I finished IB DP at Batory High School in Warsaw with a score of 42 (7 from Maths AA HL). In my high school, I received the best graduating mathematician award, and represented it in many mathematical competitions (like the Singapore International Mathematical Modelling Contest). With a solid foundation in analytical thinking, I&apos;m passionate about helping students understand and enjoy challenging subjects like Mathematics and beyond. My goal is to make learning less daunting and more engaging.</p>
+                    <p>I am currently a Computer Science and Engineering student at TU Delft, and I also tutor IB Mathematics AA (both SL and HL). I finished IB DP at Batory High School in Warsaw with a score of 42 (7 from Maths AA HL). In my high school, I received the best graduating mathematician award, and represented it in many mathematical competitions (like the Singapore International Mathematical Modelling Contest). With a solid foundation in analytical thinking, I&apos;m passionate about helping students understand and enjoy challenging subjects like Mathematics and beyond. My goal is to make learning less daunting and more engaging.</p>
                 </div>
 
                 <div>
@@ -52,6 +56,7 @@ export default function Tutoring() {
                     <h3 className='text-lg'>Contact:</h3>
                     <span>E-mail: <a href="mailto:tutoring@bewu.dev" className='link'>tutoring@bewu.dev</a></span>
                     <span>WhatsApp: <a href='https://wa.me/+31657123273' className='link' target='blank'>Chat with me</a></span>
+                    <span>Google Maps: <a href="https://maps.app.goo.gl/Tbki8sMA7YWRZ61x6" className='link' target='blank'>Reviews and more</a></span>
                 </div>
 
                 <div className='mt-4'>
