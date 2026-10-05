@@ -8,8 +8,6 @@ node_modules
 # sveltekit & build outputs
 /.svelte-kit
 /build
-/.next/
-/out/
 
 # misc
 .DS_Store
@@ -29,4 +27,3 @@ pnpm-debug.log*
 
 # typescript
 *.tsbuildinfo
-next-env.d.ts
