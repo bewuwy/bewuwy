@@ -50,90 +50,98 @@
 
 			<!-- Page 1 (Book Cover, hinged at the top horizontal seam) -->
 			<div
-				class="cover-panel absolute inset-0 w-full h-full origin-top z-10 overflow-hidden flex flex-col justify-center items-center"
+				class="cover-panel absolute inset-0 w-full h-full origin-top z-10 overflow-hidden"
 				style="transform: rotateX({scrollProgress * 110}deg); transform-style: preserve-3d; backface-visibility: hidden; pointer-events: {scrollProgress > 0.9 ? 'none' : 'auto'};"
 			>
-				<Sticker
-					src="/stickers/typescript.svg"
-					alt="TypeScript"
-					top="12%"
-					left="8%"
-					rotation={-14}
-					size={135}
-					class="z-0 hidden sm:inline-flex"
-				/>
+				<div class="grid grid-cols-[1fr_auto_1fr] grid-rows-3 w-full h-full p-4 sm:p-8">
+					<!-- Top-Left: TypeScript -->
+					<div class="flex items-center justify-center">
+						<Sticker
+							src="/stickers/typescript.svg"
+							alt="TypeScript"
+							rotation={-14}
+							size={135}
+						/>
+					</div>
 
-				<Sticker
-					src="/stickers/python.svg"
-					alt="Python"
-					top="15%"
-					right="8%"
-					rotation={12}
-					size={140}
-					class="z-0 hidden sm:inline-flex"
-				/>
+					<!-- Top-Center: JavaScript -->
+					<div class="flex items-center justify-center px-4">
+						<Sticker
+							src="/stickers/javascript.png"
+							alt="JavaScript"
+							rotation={6}
+							size={115}
+						/>
+					</div>
 
-				<Sticker
-					src="/stickers/docker.svg"
-					alt="Docker"
-					bottom="12%"
-					left="10%"
-					rotation={8}
-					size={130}
-					class="z-0 hidden md:inline-flex"
-				/>
+					<!-- Top-Right: Python -->
+					<div class="flex items-center justify-center">
+						<Sticker
+							src="/stickers/python.svg"
+							alt="Python"
+							rotation={12}
+							size={140}
+						/>
+					</div>
 
-				<Sticker
-					src="/stickers/svelte.svg"
-					alt="Svelte"
-					bottom="14%"
-					right="10%"
-					rotation={-10}
-					size={130}
-					class="z-0 hidden sm:inline-flex"
-				/>
+					<!-- Middle-Left: Go (more to the side) -->
+					<div class="flex items-center justify-start pl-4 sm:pl-8">
+						<Sticker
+							src="/stickers/go.svg"
+							alt="Go"
+							rotation={-6}
+							size={120}
+						/>
+					</div>
 
-				<Sticker
-					src="/stickers/go.svg"
-					alt="Go"
-					top="45%"
-					left="3%"
-					rotation={-6}
-					size={120}
-					class="z-0 hidden lg:inline-flex"
-				/>
-
-				<Sticker
-					src="/stickers/postgresql.png"
-					alt="PostgreSQL"
-					top="48%"
-					right="4%"
-					rotation={15}
-					size={125}
-					class="z-0 hidden lg:inline-flex"
-				/>
-
-				<Sticker
-					src="/stickers/javascript.png"
-					alt="JavaScript"
-					top="7%"
-					left="45%"
-					rotation={6}
-					size={115}
-					class="z-0 hidden md:inline-flex"
-				/>
-
-				<div class="relative z-10 flex flex-col items-center px-4">
-					<CheckeredPaper
-						class="flex flex-col items-center text-center max-w-xl"
-					>
-						<h1 class="text-4xl sm:text-6xl font-bold">
-							Bartek Włodarczyk
-						</h1>
-						<span class="text-xl sm:text-2xl mt-2 text-gray-700"
-							>Software Developer</span
+					<!-- Center: Big Name Card -->
+					<div class="flex items-center justify-center px-4 sm:px-8">
+						<CheckeredPaper
+							class="flex flex-col items-center text-center max-w-xl"
 						>
-					</CheckeredPaper>
+							<h1 class="text-4xl sm:text-6xl font-bold whitespace-nowrap">
+								Bartek Włodarczyk
+							</h1>
+							<span class="text-xl sm:text-2xl mt-2 text-gray-700 whitespace-nowrap"
+								>Software Developer</span
+							>
+						</CheckeredPaper>
+					</div>
+
+					<!-- Middle-Right: PostgreSQL (more to the side) -->
+					<div class="flex items-center justify-end pr-4 sm:pr-8">
+						<Sticker
+							src="/stickers/postgresql.png"
+							alt="PostgreSQL"
+							rotation={15}
+							size={125}
+						/>
+					</div>
+
+					<!-- Bottom-Left: Docker -->
+					<div class="flex items-center justify-center">
+						<Sticker
+							src="/stickers/docker.svg"
+							alt="Docker"
+							rotation={8}
+							size={130}
+						/>
+					</div>
+
+					<!-- Bottom-Center: Empty -->
+					<div class="flex items-center justify-center px-4">
+						<!-- Bottom-center cell stays empty -->
+					</div>
+
+					<!-- Bottom-Right: Svelte -->
+					<div class="flex items-center justify-center">
+						<Sticker
+							src="/stickers/svelte.svg"
+							alt="Svelte"
+							rotation={-10}
+							size={130}
+						/>
+					</div>
 				</div>
 
 				<!-- Scroll cue arrow -->
