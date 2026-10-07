@@ -48,13 +48,13 @@
 				</CheckeredPaper>
 			</div>
 
-			<!-- Page 1 (Book Cover, hinged at the top horizontal seam) -->
+			<!-- Page 1 (Notebook Cover) -->
 			<div
 				class="cover-panel absolute inset-0 w-full h-full origin-top z-10 overflow-hidden"
 				style="transform: rotateX({scrollProgress * 110}deg); transform-style: preserve-3d; backface-visibility: hidden; pointer-events: {scrollProgress > 0.9 ? 'none' : 'auto'};"
 			>
 				<div class="grid grid-cols-[1fr_auto_1fr] grid-rows-3 w-full h-full p-4 sm:p-8">
-					<!-- Top-Left: TypeScript -->
+
 					<div class="flex items-center justify-center">
 						<Sticker
 							src="/stickers/typescript.svg"
@@ -64,7 +64,6 @@
 						/>
 					</div>
 
-					<!-- Top-Center: JavaScript -->
 					<div class="flex items-center justify-center px-4">
 						<Sticker
 							src="/stickers/javascript.png"
@@ -74,7 +73,6 @@
 						/>
 					</div>
 
-					<!-- Top-Right: Python -->
 					<div class="flex items-center justify-center">
 						<Sticker
 							src="/stickers/python.svg"
@@ -84,7 +82,6 @@
 						/>
 					</div>
 
-					<!-- Middle-Left: Go (more to the side) -->
 					<div class="flex items-center justify-start pl-4 sm:pl-8">
 						<Sticker
 							src="/stickers/go.svg"
@@ -94,7 +91,7 @@
 						/>
 					</div>
 
-					<!-- Center: Big Name Card -->
+					<!-- Center -->
 					<div class="flex items-center justify-center px-4 sm:px-8">
 						<CheckeredPaper
 							class="flex flex-col items-center text-center max-w-xl"
@@ -108,7 +105,6 @@
 						</CheckeredPaper>
 					</div>
 
-					<!-- Middle-Right: PostgreSQL (more to the side) -->
 					<div class="flex items-center justify-end pr-4 sm:pr-8">
 						<Sticker
 							src="/stickers/postgresql.png"
@@ -118,7 +114,6 @@
 						/>
 					</div>
 
-					<!-- Bottom-Left: Docker -->
 					<div class="flex items-center justify-center">
 						<Sticker
 							src="/stickers/docker.svg"
@@ -128,12 +123,10 @@
 						/>
 					</div>
 
-					<!-- Bottom-Center: Empty -->
 					<div class="flex items-center justify-center px-4">
 						<!-- Bottom-center cell stays empty -->
 					</div>
 
-					<!-- Bottom-Right: Svelte -->
 					<div class="flex items-center justify-center">
 						<Sticker
 							src="/stickers/svelte.svg"
